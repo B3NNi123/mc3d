@@ -1,0 +1,237 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <title>MC3D | Mint Club 3D | Startseite</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="js/fader.min.js">
+        </script>
+    </head>
+    <body>
+       <img src="img/BG/bg.png" class="background">
+        <div id="headerframe" class="header" >
+            <nav accesskey="h">
+                <table class="menue">
+                <tr>
+                    <td>
+                        <div id="menu0" class="logo">
+                            <img src="img/logo/logohead.png" class="logo" onclick="location.href = '#'">
+                        </div>
+                    </td>
+                    <td>
+                        <div id="menu1" class="menupoint" onclick="loadHome();">
+                            <img src="img/menu/1.png" class="menupoint"><br>
+                            <p class="header">Home</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="menu2" class="menupoint" onclick="loadAbout();">
+                            <img src="img/menu/2.png" class="menupoint"><br>
+                            <p class="header">Über uns</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="menu3" class="menupoint" onclick="loadProjects();">
+                            <img src="img/menu/3.png" class="menupoint" ><br>
+                            <p class="header"> Bisherige Projekte</p>
+                        </div>    
+                    </td>
+                    <td>
+                        <div id="menu4" class="menupoint" onclick="loadContact();">
+                            <img src="img/menu/4.png" class="menupoint"><br>
+                            <p class="header">Kontakt</p>
+                        </div>
+                    </td>
+                </tr>        
+                </table>
+            </nav>
+        </div>
+        <br>
+        <br>
+    <div id="contentHome" class="content">
+        <table class="header">
+            <tr>
+                <td>
+                    <h1>Willkommen bei uns!</h1><br>
+                </td>
+            <tr>
+                <td>
+                    <h3>Wir sind MC3D - lassen Sie sich begeistern.</h3>
+                </td>
+                
+            </tr>
+        </table>
+        </div>
+    <div id="contentProjects" class="content">
+        <table class="content">
+            <tr>
+                <td><h2>Project TopoPlaces</h2></td>
+            </tr>
+            <tr>
+                <td><p><b>Brauchen Sie noch ein schnelles Geschenk zu Weihnachten?</b> <br> Wählen sie auf einer Karte einen Bereich (Ort Ihres ersten Kusses, Geburtsort, etc.) aus und lassen Sie sich selbigen mithilfe unseres selbstentwickelten Algorithmus 3D-ausgedruckt zuschicken! Jetzt ab 7,50€ zzgl. Versand.</p></td>
+            </tr>
+        </table>
+    </div>    
+    <div id="contentAbout" class="content">
+            <table class="content">
+                <tr>
+                    <td>
+                        <h1 class="centered">Wer sind wir?</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Wir - das ist ein kleines zwölfköpfiges Team aus Schülern aus den Jahrgangsstufen 6-12 von einem Gymnasium in Regensburg.</p>
+                    </td>
+                </tr>
+            </table>
+        <br>
+           <br>
+           <br>
+           <br>
+            <table class="team">
+               <tr>
+                   <td>
+                       <h2>Der Vorstand:</h2>
+                   </td>
+               </tr>
+                <tr>
+                    <td><img src="img/team/jonasm.jpg" class="round"></td>
+                    <td><img src="img/team/jonass.jpg" class="round"></td>
+                    <td><img src="img/team/sebastianj.jpg" class="round" onclick="toggleMarket();"></td>
+                    <td><img src="img/team/jonasv.jpg" class="round" onclick="toggleFinance();"></td>
+                    <td><img src="img/team/benjaminr.jpg" class="round" onClick="togglePress();"></td>
+                </tr>
+                <tr>
+                    <td>Jonas Meier<br>1. Vorstand</td>
+                    <td>Jonas Strasser<br>2. Vorstand</td>
+                    <td>Sebastian Junge<br>Marketingleiter</td>
+                    <td>Jonas Vierjahn<br>Finanzleiter</td>
+                    <td>Benjamin Reinecke<br>Presseleiter</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><img src="img/team/hendriks.jpg" id="otherMarket1" class="dropround"></td>
+                    <td><img src="img/team/santiagors.jpg" id="otherFinance1" class="dropround"></td>
+                    <td><img src="img/team/jakobf.jpg" id="otherPress1" class="dropround"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><p id="otherMarket1" class="content">Hendrik Schmitz <br>Marketingberater</p></td>
+                    <td><p id="otherFinance1" class="content">Santiago R. Scola<br>Finanzmitarbeiter</p></td>
+                    <td><p id="otherPress1" class="hideout">Jakob Feuerer <br> Pressesprecher</p></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img id="otherFinance2" src="img/team/joels.jpg" class="dropround"></td>
+                    <td><img id="otherPress1" src="img/team/raphaelw.jpg" class="dropround"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><p>Joel Sander <br>Finanzmitarbeiter</p></td>
+                    <td><p>Raphael Weigert <br>Pressemitarbeiter</p></td>
+                </tr>
+            </table>
+            </div>
+    <div id="contentContact" class="content">
+        
+        <table class="content">
+           <tr>
+               <td>
+                   <h2>
+            Für Presseanfragen:
+        </h2>
+               </td>
+           </tr>
+            <tr>
+                <td>
+                    Büro für Presseanfragen
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    z.H Benjamin Reinecke
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Reichsstrasse 22
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    93055 Regensburg
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email: presse@mintclub3d.de
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Für telefonische Anfragen stehen wir derzeit nicht zur Verfügung.
+                </td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td>
+                   <h2> Für geschäftliche Anfragen:</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Büro des Vorstandes
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    z. H. Jonas Meier
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Reichsstrasse 22
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    93055 Regensburg
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email: vorstand@mintclub3d.de
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Für telefonische Anfragen stehen wir derzeit nicht zur Verfügung.
+                </td>
+            </tr>
+        </table>
+    </div>
+            <footer onclick="showImpressum();">Impressum</footer>
+            <div id="impressum" class="content">
+               <table class="content">
+                <tr><td>Mint-Club 3D</td></tr>
+                <tr><td>z. H. Jonas Meier</td></tr>
+                <tr><td>Reichsstraße 22</td></tr>
+                <tr><td>93055 Regensburg</td></tr>
+                <tr><td>Deutschland</td></tr>
+                </table>
+            </div>
+    </body>
+
+
+
+
+
+</html>
